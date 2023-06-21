@@ -21,10 +21,10 @@ export const AddPostClientForm = ({ addPost }) => {
           <button className='px-2 text-white bg-green-500 rounded hover:bg-green-300 disabled:bg-gray-500'  
                   disabled={pending} 
                   onClick={async () => {
-                    startTransition(async () => {
-                      await addPost(title, desc) 
-                    });
-                  }}
+                                          startTransition(async () => { 
+                                            await addPost(title, desc) 
+                                          });
+                                        }}
                   >Add
           </button>
         </div>
