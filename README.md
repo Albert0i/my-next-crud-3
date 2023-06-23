@@ -10,7 +10,7 @@
 
 
 ### I. Project setup 
-With the release of [NextJS 13.4](https://javascript.plainenglish.io/nextjs-13-4-server-actions-ba63f46847a3), two of the most appealing features are **App Router** and **Server Action**. 
+
 
 ### II. REST Server
 
@@ -26,6 +26,7 @@ With the release of [NextJS 13.4](https://javascript.plainenglish.io/nextjs-13-4
 
 ### VI. Summary 
 [Calling an ASP.NET C# Method (Web Method) Using JavaScript](https://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/calling-an-Asp-Net-C-Sharp-method-web-method-using-javascript/)
+
 
 ### VII. Reference
 1. [Server Actions: NextJS 13.4's Best New Feature](https://youtu.be/czvSZqnpTHs)
