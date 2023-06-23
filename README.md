@@ -2,9 +2,9 @@
 
 
 <div style="text-align: right; color:white; background-color:black"><em>
-</em>‘que toute idée publique, <br />toute convention reçue est une sottise, <br />car elle a convenue au plus grand nombre.’
+</em>‘que toute idée publique, toute convention reçue est une sottise, <br />car elle a convenue au plus grand nombre.’
 <br />
-“任何公共想法、<br />任何公認的慣例都是愚蠢的，<br />因為它已經得到了最多人的同意。”
+“任何公共想法、任何公認的慣例都是愚蠢的，<br />因為它已經得到了最多人的同意。”
 </div>
 
 
