@@ -14,7 +14,7 @@
 
 
 ### I. Project setup 
-
+With the release of [NextJS 13.4](https://javascript.plainenglish.io/nextjs-13-4-server-actions-ba63f46847a3), two of the most appealing features are **App Router** and **Server Action**. 
 
 ### II. REST Server
 
