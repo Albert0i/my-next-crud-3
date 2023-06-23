@@ -2,10 +2,7 @@
 
 
 <div style="text-align: right; color:white; background-color:black">
-<em>
-    —— Un dessein si funeste,<br />
-  S’il n’est digne d’Atrée, est digne de Thyeste.
-</em>
+<em></em>
 </div>
 
 
