@@ -6,7 +6,7 @@
 <br />
 “任何公共想法、任何公認的慣例很可能都是愚蠢的，因為它已經得到了最多人的同意。”
 <br /><br />
-─── Nicolas Chamfort
+─── <a href='https://www.abc-citations.com/auteurs/nicolas-chamfort/page/6/'>Nicolas Chamfort</a>
 </div>
 
 
