@@ -1,4 +1,4 @@
-## From Node to Next 
+## From Dilemma to Trilemma 
 
 
 <div style="text-align: right; color:white; background-color:black">
