@@ -1,4 +1,4 @@
-## From Dilemma to Trilemma 
+## From [Node](https://nodejs.org/en) to [NEXT](https://nextjs.org/)
 
 
 <div style="text-align: right; color:white; background-color:black">
