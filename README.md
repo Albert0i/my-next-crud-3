@@ -1,13 +1,15 @@
 ## From [Node](https://nodejs.org/en) to [NEXT](https://nextjs.org/)
 
 
-<div style="text-align: right; color:white; background-color:black">
-<em></em>
+<div style="text-align: left; color:white; background-color:black">
+ ‘When I wish to find out how wise, or how stupid, or how good, or how wicked is any one, or what are his thoughts at the moment, I fashion the expression of my face, as accurately as possible, in accordance with the expression of his, and then wait to see what thoughts or sentiments arise in my mind or heart, as if to match or correspond with the expression.’ 
 </div>
 
 
 ### Prologue
+Ordinary mass persuing noveties, while other live their own way --- in their old way. *New*, doesn't necessarily means good; *Old*, doesn't necessarily means bad. The juxtaposition of old and new, especially with regards to taking styles from past periods and re-fitting them into modern art outside of their original context, is a common characteristic of [postmodern art](https://en.wikipedia.org/wiki/Postmodern_art).
 
+For quite a long time, I have indulged in my styles of living.  
 
 ### I. Project setup 
 
