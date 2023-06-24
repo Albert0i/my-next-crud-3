@@ -9,7 +9,7 @@
 ### Prologue
 Ordinary mass persue noveties, some other live their own way --- in the old way. *New*, doesn't necessarily means good; *Old*, doesn't necessarily means bad. The juxtaposition of old and new, especially with regards to taking styles from past periods and re-fitting them into modern art outside of their original context, is a common characteristic of [postmodern art](https://en.wikipedia.org/wiki/Postmodern_art).
 
-For over twenty years of time, I have indulged in my seclusive style of life with my wife. I am a functionary but endeavor to keep connexion with others as less as possible. Once upon a time, a coworker who leads a bourgeois life, and was a successful person from any vulgar point of view. 
+For over twenty years of time, I have indulged in my seclusive style of life with my wife. I am a functionary but endeavor to keep connexion with others as less as possible. Once upon a time, a coworker who leads a bourgeois life, and was a successful person from any point of view. 
 
 '*If you are right then I am wrong!*' I said. 
 
