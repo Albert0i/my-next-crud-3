@@ -7,11 +7,32 @@
 
 
 ### Prologue
-Ordinary mass persuing noveties, while other live their own way --- in their old way. *New*, doesn't necessarily means good; *Old*, doesn't necessarily means bad. The juxtaposition of old and new, especially with regards to taking styles from past periods and re-fitting them into modern art outside of their original context, is a common characteristic of [postmodern art](https://en.wikipedia.org/wiki/Postmodern_art).
+Ordinary mass persue noveties, some other live their own way --- in the old way. *New*, doesn't necessarily means good; *Old*, doesn't necessarily means bad. The juxtaposition of old and new, especially with regards to taking styles from past periods and re-fitting them into modern art outside of their original context, is a common characteristic of [postmodern art](https://en.wikipedia.org/wiki/Postmodern_art).
 
-For quite a long time, I have indulged in my styles of living.  
+For over twenty years of time, I have indulged in my seclusive style of life with my wife. I am a functionary but endeavor to keep connexion with others as less as possible. Once upon a time, a coworker who leads a bourgeois style of life, and was a successful person from any vulgar point of view. 
+
+'If you are right then I am wrong!' I said. 
+'What do you mean?' he replied...   
+
 
 ### I. Project setup 
+With the release of [Next.js 13.4](https://nextjs.org/blog/next-13-4), two of the most appealing features are **App Router** and **Server Action**. 
+- App Router enables the routing defined by the hierarchy of your folders within the app directory. 
+- Server Action enables client-side javascript calling functions on server directly without needing to create an API layer in-between. 
+
+![alt create-next-app](img/create-next-app.png)
+
+next.config.js
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    serverActions: true,
+  },
+}
+
+module.exports = nextConfig
+```
 
 
 ### II. REST Server
