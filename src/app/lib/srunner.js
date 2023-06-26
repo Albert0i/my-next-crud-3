@@ -110,6 +110,7 @@ const logger = (cmdText) => {
 module.exports = { openDb, runSelectSQL, runValueSQL, runSQL, runInsertSQLYieldRowID, closeDb } 
 
 /*
+   DROP TABLE posts; 
    CREATE TABLE posts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title text NOT NULL,
