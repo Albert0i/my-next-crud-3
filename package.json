@@ -12,10 +12,12 @@
     "deploy:prod": "next build && pm2 startOrRestart ecosystem.config.js --env prod",
     "stop": "pm2 delete my-next-crud",
     "next-version": "npx next --version",
-    "next-upgrade": "npm install next@latest"
+    "next-upgrade": "npm install next@latest",
+    "sqlite": "sqlite3 src/data/db.sqlite"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "better-sqlite3": "^8.4.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "next": "^13.4.7",

@@ -27,7 +27,7 @@ Content-Type: application/json
 
 
 ### Delete a post  
-DELETE http://localhost:3000/api/blogs/4
+DELETE http://localhost:3000/api/blogs/8
 Content-Type: application/json
 
 

@@ -1,19 +1,20 @@
 import { nextResponse } from 'next/server'
+import { openDb, runSelectSQL, runSQL, runInsertSQLYieldRowID, closeDb } from 'app/lib/srunner'
 import { getPostById, updatePost, deletePost } from '../../../lib/data'
+import path from 'path'
+
+const dbPath = path.join(__dirname, '..', '..', '..', '..', '..', '..', 'src', 'data', 'db.sqlite')
 
 // Get a post 
 export async function GET(req, res) {    
     //console.log(`id=${req.url.split('blogs/')[1]}`)
-    try {
-        const id = parseInt(res.params.id)
-        const post = getPostById(id)
-        if (post) 
-            return nextResponse.json({ message: 'OK', post}, { status:200 })
-        else 
-            return nextResponse.json({ message: 'Error'}, { status:404 })
-    } catch (err) {
-        return nextResponse.json({ message: 'Error'}, { status:500 })
-    }
+    openDb(dbPath)    
+    const result = runSelectSQL(`SELECT * FROM posts WHERE id=${res.params.id}`)
+    closeDb()
+
+    return nextResponse.json({ success: result.success, 
+                               row: result.rows[0] ? result.rows[0] : null }, 
+                             { status: result.success ? 200 : 400 } )
 }
 
 // Update a post 
@@ -32,13 +33,19 @@ export async function PUT(req, res) {
 // Delete a post 
 export async function DELETE(req, res) {
     //console.log(`id=${req.url.split('blogs/')[1]}`)
-    try {
-        const id = parseInt(res.params.id)
-        deletePost(id)
-        return nextResponse.json({ message: 'OK'}, { status:204 })
-    } catch (err) {
-        return nextResponse.json({ message: 'Error'}, { status:500 })
-    }
+    // try {
+    //     const id = parseInt(res.params.id)
+    //     deletePost(id)
+    //     return nextResponse.json({ message: 'OK'}, { status:204 })
+    // } catch (err) {
+    //     return nextResponse.json({ message: 'Error'}, { status:500 })
+    // }
+    openDb(dbPath)
+    const result = runSQL([`DELETE FROM posts WHERE id=${res.params.id}`], true)
+    closeDb()
+
+    return nextResponse.json({ ...result }, 
+                             { status: result.success ? 200 : 400 } )
 }
 
 /*

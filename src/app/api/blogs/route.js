@@ -1,26 +1,26 @@
 import { nextResponse } from 'next/server'
-import { getPosts, addPost } from '../../lib/data'
+import { openDb, runSelectSQL, runInsertSQLYieldRowID, closeDb } from 'app/lib/srunner'
+import path from 'path'
+
+const dbPath = path.join(__dirname, '..', '..', '..', '..', '..', 'src', 'data', 'db.sqlite')
 
 // Get all posts 
 export async function GET(req, res) {
-    try {
-        const posts = getPosts()
-        return nextResponse.json({ message: 'OK', posts}, { status:200 })
-    } catch (err) {
-        return nextResponse.json({ message: 'Error'}, { status:500 })
-    }    
+    openDb(dbPath)
+    const result = runSelectSQL('SELECT * FROM posts ORDER BY id')
+    closeDb()
+
+    return nextResponse.json(result, { status: result.success ? 200 : 400 } )
 }
 
 // Create a post 
 export async function POST(req, res) {
     const body = await req.json()
-
-    try {
-        addPost(body)
-        return nextResponse.json({ message: 'OK'}, { status:201 })
-    } catch (err) {
-        return nextResponse.json({ message: 'Error'}, { status:500 })
-    }
+    openDb(dbPath)
+    const result = runInsertSQLYieldRowID(`INSERT INTO posts (title, desc) values('${body.title}', '${body.desc}')`)
+    closeDb()
+    
+    return nextResponse.json(result, { status: result.success ? 201 : 400 } )
 }
 
 /*
