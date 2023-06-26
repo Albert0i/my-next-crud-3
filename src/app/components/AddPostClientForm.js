@@ -23,6 +23,8 @@ export const AddPostClientForm = ({ addPost }) => {
                   onClick={async () => {
                                           startTransition(async () => { 
                                             await addPost(title, desc) 
+                                            setTitle('')
+                                            setDesc('')
                                           });
                                         }}
                   >Add
