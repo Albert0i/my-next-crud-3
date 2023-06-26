@@ -2,19 +2,11 @@
 
 
 <div style="text-align: left; color:white; background-color:black">
- ‘When I wish to find out how wise, or how stupid, or how good, or how wicked is any one, or what are his thoughts at the moment, I fashion the expression of my face, as accurately as possible, in accordance with the expression of his, and then wait to see what thoughts or sentiments arise in my mind or heart, as if to match or correspond with the expression.’ 
 </div>
 
 
 ### Prologue
-Ordinary mass persue noveties, some other live their own way --- in the old way. *New*, doesn't necessarily means good; *Old*, doesn't necessarily means bad. The juxtaposition of old and new, especially with regards to taking styles from past periods and re-fitting them into modern art outside of their original context, is a common characteristic of [postmodern art](https://en.wikipedia.org/wiki/Postmodern_art).
-
-For over twenty years of time, I have indulged in my seclusive style of life with my wife. I am a functionary but endeavor to keep connexion with others as less as possible. Once upon a time, a coworker who leads a bourgeois life, and was a successful person from any point of view. 
-
-'*If you are right then I am wrong!*' I said. 
-
-'What do you mean?' he replied...   
-
+‘When I wish to find out how wise, or how stupid, or how good, or how wicked is any one, or what are his thoughts at the moment, I fashion the expression of my face, as accurately as possible, in accordance with the expression of his, and then wait to see what thoughts or sentiments arise in my mind or heart, as if to match or correspond with the expression.’
 
 ### I. Project setup 
 With the release of [Next.js 13.4](https://nextjs.org/blog/next-13-4), two of the most appealing features are **App Router** and **Server Action**. 
@@ -70,4 +62,4 @@ module.exports = nextConfig
 ```
 
 
-### EOF (2023/06/23)
+### EOF (2023/06/26)
