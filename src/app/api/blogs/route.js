@@ -1,5 +1,5 @@
 import { nextResponse } from 'next/server'
-import { openDb, runSelectSQL, runInsertSQLYieldRowID, closeDb } from '../../lib/srunner'
+import { openDb, runSelectSQL, runInsertSQLYieldRowID, closeDb } from '@/app/lib/srunner'
 import path from 'path'
 
 const dbPath = path.join(__dirname, '..', '..', '..', '..', '..', 'src', 'data', 'db.sqlite')
