@@ -1,6 +1,6 @@
-import { getAllPosts } from '@/components/getAllPostsServerAction'
-import { DeletePostClientButton } from '@/components/DeletePostClientButton'
-import { deletePostServerAction } from '@/components/deletePostServerAction'
+import { getAllPosts } from '@/app/components/getAllPostsServerAction'
+import { DeletePostClientButton } from '@/app/components/DeletePostClientButton'
+import { deletePostServerAction } from '@/app/components/deletePostServerAction'
 
 export default async function Home() {  
   const data = await getAllPosts()
@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className='container p-4 mx-auto'>
       <ul className='flex flex-col justify-start list-none'>
-          { data.posts.map( post => (
+          { data.rows.map( post => (
             <li className='mt-1' key={post.id}>{post.title} | {post.desc} | 
               <DeletePostClientButton 
                deletePost={deletePostServerAction} id={post.id} />              

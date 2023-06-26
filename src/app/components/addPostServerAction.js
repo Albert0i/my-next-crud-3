@@ -8,10 +8,10 @@ export const addPostServerAction = async (title, desc) => {
                               { method: 'POST',
                                 body: JSON.stringify({ title, desc }) } );
       await sleep(1000)
-      console.log(`statusCode=${res.status}`)
+      //console.log(`statusCode=${res.status}`)
       revalidateTag('posts')
-      revalidatePath('/')
+      revalidatePath('/add')
     } catch (err) {
-      console.log(err.message);
+      console.log(err.message);      
     }
   }

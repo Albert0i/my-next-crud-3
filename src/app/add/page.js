@@ -1,5 +1,5 @@
-import { AddPostClientForm } from '@/components/AddPostClientForm'
-import { addPostServerAction } from '@/components/addPostServerAction'
+import { AddPostClientForm } from '@/app/components/AddPostClientForm'
+import { addPostServerAction } from '@/app/components/addPostServerAction'
 
 export default async function Add() {     
   return (

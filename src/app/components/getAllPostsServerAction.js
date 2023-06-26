@@ -7,7 +7,7 @@ export const getAllPosts = async () => {
                                     { cache: 'no-store', tags: ['posts'] } );
         const data = await res.json();
         await sleep(1000)
-        console.log(`statusCode=${res.status}`)
+        //console.log(`statusCode=${res.status}`)
         return data
     } catch (err) {
         console.log(err.message);
