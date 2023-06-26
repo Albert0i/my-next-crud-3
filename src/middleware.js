@@ -8,7 +8,7 @@ import { nextResponse } from 'next/server'
 export async function middleware(req) {
    const response = nextResponse.next()
  
-   console.log('middleware in action !')                            
+   console.log(`> middleware, method=${req.method}`)
    response.headers.append('Access-Control-Allow-Origin', '*')
    response.headers.append('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
    response.headers.append('Access-Control-Allow-Headers', 'Content-Type, Authorization')

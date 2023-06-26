@@ -5,7 +5,7 @@ let posts = [
         { id:3, title: 'third title', desc: 'third desc'}
     ]
 
-// handlers 
+// Post handlers 
 export const getPosts = () => posts
 
 export const getPostById = (id) => posts.find(post => post.id === id)
@@ -16,21 +16,19 @@ export const addPost = (newPost) => {
         id = posts[posts.length-1].id + 1
     posts.push({id, ...newPost}) 
 }
-
-export const deletePost = (id) => {    
-    posts = posts.filter(post => post.id !== id)
-}
     
 export const updatePost = (newPost) => {
-    console.log(posts)
-    console.log(newPost)
     const oldPost = posts.find(post => post.id===newPost.id)
 
     if (oldPost) {
         oldPost.title = newPost.title
-        oldPost.desc = newPost.desc 
+        oldPost.desc = newPost.desc
     }
     else {
         throw new Error(`Post id=${newPost.id} not found!`)
     }
+}
+
+export const deletePost = (id) => {
+    posts = posts.filter(post => post.id !== id )
 }

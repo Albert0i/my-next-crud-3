@@ -1,11 +1,9 @@
 import { nextResponse } from 'next/server'
-import { getPostById, deletePost, updatePost } from '../../../lib/data'
+import { getPostById, updatePost, deletePost } from '../../../lib/data'
 
 // Get a post 
 export async function GET(req, res) {    
-    // console.log(`id=${req.url.split('blogs/')[1]}`)
-    // console.log(req)
-    // console.log(res)
+    //console.log(`id=${req.url.split('blogs/')[1]}`)
     try {
         const id = parseInt(res.params.id)
         const post = getPostById(id)
