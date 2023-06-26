@@ -1,6 +1,6 @@
-import { getAllPosts } from '@/components/getAllPostsServerAction'
-import { DeletePostClientButton } from '@/components/DeletePostClientButton'
-import { deletePostServerAction } from '@/components/deletePostServerAction'
+import { getAllPosts } from '@/app/components/getAllPostsServerAction'
+import { DeletePostClientButton } from '@/app/components/DeletePostClientButton'
+import { deletePostServerAction } from '@/app/components/deletePostServerAction'
 
 export default async function Home() {  
   const data = await getAllPosts()
